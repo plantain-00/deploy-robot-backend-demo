@@ -3,8 +3,10 @@ const minimist = require("minimist");
 
 const app = express();
 
-app.get("/", (request, response) => {
-    response.send("backend: first version");
+app.get("/api/", (request, response) => {
+    response.json({
+        backend: "first version",
+    });
 });
 
 const argv = minimist(process.argv.slice(2));
