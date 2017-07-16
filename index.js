@@ -5,7 +5,7 @@ const app = express();
 
 app.get("/api/", (request, response) => {
     response.json({
-        backend: "fifth version",
+        backend: "7th version",
     });
 });
 
